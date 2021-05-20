@@ -18,4 +18,5 @@ git commit -m 'deploy'
 # git push
 git push -f git@github.com:bowlofnoodles/blog.git master:gh-pages
 
+echo "发布成功～访问：https://bowlofnoodles.github.io/blog"
 cd -

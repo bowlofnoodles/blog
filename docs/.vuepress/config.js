@@ -3,7 +3,7 @@
 module.exports = {
   title: 'bowlofnoodles',
   description: 'bowlofnoodles的博客散记',
-  base: '/blog',
+  base: '/blog/',
   themeConfig: {
     sidebarDepth: 2,
     lastUpdated: 'Last Updated',

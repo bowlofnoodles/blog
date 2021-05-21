@@ -19,7 +19,8 @@ module.exports = {
         {
           title: '每日一题',
           children: [
-            '/algorithm/每日一题/21-05-20'
+            '/algorithm/每日一题/21-05-20',
+            '/algorithm/每日一题/21-05-21',
           ]
         }
       ],

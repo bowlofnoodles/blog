@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: ./noodles.jpeg
+heroImage: ./noodles.png
 actionText: 开始阅读 →
 actionLink: /javascript/
 features:

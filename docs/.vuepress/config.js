@@ -4,6 +4,9 @@ module.exports = {
   title: 'bowlofnoodles',
   description: 'bowlofnoodles的博客散记',
   base: '/blog/',
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }]
+  ],
   themeConfig: {
     sidebarDepth: 2,
     lastUpdated: 'Last Updated',
@@ -23,6 +26,7 @@ module.exports = {
             '/algorithm/每日一题/21-05-21',
             '/algorithm/每日一题/21-05-21-2',
             '/algorithm/每日一题/21-05-22',
+            '/algorithm/每日一题/21-05-23',
           ]
         }
       ],

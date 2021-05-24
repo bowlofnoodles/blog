@@ -2,7 +2,7 @@
 home: true
 heroImage: ./noodles.png
 actionText: 开始阅读 →
-actionLink: /javascript/
+actionLink: /algorithm/
 features:
 - title: javascript专题
   details: 常见javascript知识记录

@@ -14,6 +14,7 @@ module.exports = {
       { text: 'javascript', link: '/javascript/' },
       { text: '网络', link: '/network/' },
       { text: '算法', link: '/algorithm/' },
+      { text: '前端', link: '/frontend/' },
       { text: 'github', link: 'https://github.com/bowlofnoodles' },
     ],
     sidebar: {
@@ -45,6 +46,12 @@ module.exports = {
             '/javascript/数据类型/数据类型',
             '/javascript/数据类型/大数问题',
             '/javascript/数据类型/声明关键字'
+          ]
+        },
+        {
+          title: '手写系列',
+          children: [
+            '/javascript/手写系列/EventEmitter',
           ]
         }
       ],

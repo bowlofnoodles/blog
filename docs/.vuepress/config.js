@@ -27,6 +27,7 @@ module.exports = {
             '/algorithm/每日一题/21-05-21-2',
             '/algorithm/每日一题/21-05-22',
             '/algorithm/每日一题/21-05-23',
+            '/algorithm/每日一题/21-05-24',
           ]
         }
       ],

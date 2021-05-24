@@ -29,6 +29,12 @@ module.exports = {
             '/algorithm/每日一题/21-05-23',
             '/algorithm/每日一题/21-05-24',
           ]
+        },
+        {
+          title: '算法记录',
+          children: [
+            '/algorithm/算法记录/二叉树的遍历',
+          ]
         }
       ],
       '/javascript/': [

@@ -43,9 +43,9 @@ module.exports = {
         {
           title: '数据类型',
           children: [
-            '/javascript/数据类型/数据类型',
-            '/javascript/数据类型/大数问题',
-            '/javascript/数据类型/声明关键字'
+            '/javascript/数据类型',
+            '/javascript/大数问题',
+            '/javascript/声明关键字'
           ]
         },
         {

@@ -31,6 +31,7 @@ module.exports = {
             '/algorithm/每日一题/21-05-24',
             '/algorithm/每日一题/21-05-25',
             '/algorithm/每日一题/21-05-26',
+            '/algorithm/每日一题/21-05-26-2',
           ]
         },
         {

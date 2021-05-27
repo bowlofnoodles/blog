@@ -74,6 +74,7 @@ module.exports = {
           children: [
             '/javascript/手写系列/EventEmitter',
             '/javascript/手写系列/深浅拷贝',
+            '/javascript/手写系列/instanceof',
           ]
         }
       ],

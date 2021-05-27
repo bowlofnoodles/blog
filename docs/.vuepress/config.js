@@ -44,17 +44,35 @@ module.exports = {
       '/javascript/': [
         ['/javascript/', 'Overview'],
         {
-          title: '数据类型',
+          title: 'javascript',
           children: [
             '/javascript/数据类型',
             '/javascript/大数问题',
-            '/javascript/声明关键字'
+            '/javascript/浮点数计算问题',
+            '/javascript/隐式类型转换',
+            '/javascript/声明关键字',
+            '/javascript/执行上下文和作用域',
+            '/javascript/this指向',
+            '/javascript/垃圾回收和内存泄漏',
+            '/javascript/内置复杂类型与一些api',
+            '/javascript/js中的数组',
+            '/javascript/原型链和继承',
+            '/javascript/代理和反射',
+            '/javascript/模块化区别',
+            '/javascript/迭代器和生成器',
+            '/javascript/异步编程',
+            '/javascript/函数系列1-不同函数',
+            '/javascript/函数系列2-闭包',
+            '/javascript/函数系列3-柯理化',
+            '/javascript/函数系列4-函数组合compose',
+            '/javascript/事件循环',
           ]
         },
         {
           title: '手写系列',
           children: [
             '/javascript/手写系列/EventEmitter',
+            '/javascript/手写系列/深浅拷贝',
           ]
         }
       ],

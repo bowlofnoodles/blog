@@ -28,6 +28,7 @@
 ## 手写系列
 - [深浅拷贝](./手写系列/深浅拷贝.md)
 - [instanceof](./手写系列/instanceof.md)
+- [数组打乱](./手写系列/数组打乱.md)
 
 <!-- - [EventEmitter发布订阅](./手写系列/EventEmitter发布订阅.md) -->
 <!-- - [new运算符](./手写系列/new运算符.md) -->

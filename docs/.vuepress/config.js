@@ -33,6 +33,7 @@ module.exports = {
             '/algorithm/每日一题/21-05-26',
             '/algorithm/每日一题/21-05-26-2',
             '/algorithm/每日一题/21-05-27',
+            '/algorithm/每日一题/21-05-28',
           ]
         },
         {
@@ -73,6 +74,7 @@ module.exports = {
           children: [
             '/javascript/手写系列/深浅拷贝',
             '/javascript/手写系列/instanceof',
+            '/javascript/手写系列/数组打乱',
             // '/javascript/手写系列/EventEmitter发布订阅',
             // '/javascript/手写系列/new运算符',
             // '/javascript/手写系列/节流防抖',

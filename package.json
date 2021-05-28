@@ -23,5 +23,8 @@
   "homepage": "https://github.com/bowlofnoodles/blog#readme",
   "devDependencies": {
     "vuepress": "^1.5.4"
+  },
+  "dependencies": {
+    "v-viewer": "^1.5.1"
   }
 }

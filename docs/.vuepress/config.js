@@ -48,8 +48,7 @@ module.exports = {
           title: 'javascript',
           children: [
             '/javascript/数据类型',
-            '/javascript/大数问题',
-            '/javascript/浮点数计算问题',
+            '/javascript/js的数字存储',
             '/javascript/隐式类型转换',
             '/javascript/声明关键字',
             // '/javascript/执行上下文和作用域',
@@ -72,9 +71,14 @@ module.exports = {
         {
           title: '手写系列',
           children: [
-            '/javascript/手写系列/EventEmitter',
             '/javascript/手写系列/深浅拷贝',
             '/javascript/手写系列/instanceof',
+            // '/javascript/手写系列/EventEmitter发布订阅',
+            // '/javascript/手写系列/new运算符',
+            // '/javascript/手写系列/节流防抖',
+            // '/javascript/手写系列/继承',
+            // '/javascript/手写系列/单例模式',
+            // '/javascript/手写系列/模拟私有变量',
           ]
         }
       ],

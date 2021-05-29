@@ -3,6 +3,9 @@
 # 确保脚本抛出遇到的错误
 set -e
 
+# 删除旧的dist文件夹
+rm -rf ./docs/.vuepress/dist/
+
 # 生成静态文件
 npm run docs:build
 

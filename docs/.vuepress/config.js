@@ -80,9 +80,9 @@ module.exports = {
             '/javascript/手写系列/深浅拷贝', // TODO 待补
             '/javascript/手写系列/instanceof',
             '/javascript/手写系列/数组打乱',
+            '/javascript/手写系列/节流防抖',
             // '/javascript/手写系列/EventEmitter发布订阅',
             // '/javascript/手写系列/new运算符',
-            // '/javascript/手写系列/节流防抖',
             // '/javascript/手写系列/继承',
             // '/javascript/手写系列/单例模式',
             // '/javascript/手写系列/模拟私有变量',

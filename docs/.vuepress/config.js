@@ -7,6 +7,9 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
+  plugins: [
+    '@vuepress/back-to-top'
+  ],
   themeConfig: {
     sidebarDepth: 2,
     lastUpdated: 'Last Updated',
@@ -41,6 +44,7 @@ module.exports = {
           title: '算法记录',
           children: [
             '/algorithm/算法记录/二叉树的遍历',
+            '/algorithm/算法记录/排序算法', // TODO 待补
           ]
         }
       ],
@@ -87,7 +91,7 @@ module.exports = {
       ],
       '/network/': [
         ['/network/', 'Overview'],
-        ['/network/缓存', '缓存']
+        ['/network/缓存', '缓存'] // TODO 待补
       ]
     }
   }

@@ -15,13 +15,14 @@
     "vuepress",
     "github pages"
   ],
-  "author": "",
+  "author": "bowlofnoodles",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/bowlofnoodles/blog/issues"
   },
   "homepage": "https://github.com/bowlofnoodles/blog#readme",
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.8.2",
     "vuepress": "^1.5.4"
   },
   "dependencies": {

@@ -56,7 +56,7 @@ module.exports = {
           title: 'javascript',
           children: [
             '/javascript/数据类型', // TODO 待补
-            '/javascript/js的数字存储',
+            '/javascript/js的数字存储', // TODO 待补
             '/javascript/隐式类型转换',
             '/javascript/声明关键字',
             // '/javascript/执行上下文和作用域',

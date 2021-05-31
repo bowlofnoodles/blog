@@ -94,7 +94,16 @@ module.exports = {
       '/network/': [
         ['/network/', 'Overview'],
         ['/network/缓存', '缓存'] // TODO 待补
-      ]
+      ],
+      '/frontend/': [
+        ['/frontend/', 'Overview'],
+        {
+          title: '浏览器相关',
+          children: [
+            '/frontend/浏览器相关/浏览器的架构演变', // TODO 待补
+          ]
+        },
+      ],
     }
   }
 };

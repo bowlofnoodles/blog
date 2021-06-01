@@ -22,6 +22,32 @@
   + 公测版本(`beta`)
   + 正式版本的候选版本`rc`：即 `Release candiate`
 
+注意：`semver`的`~`，`^`与`beta`，`alpha`，`rc`的阻断关系（现在还没get到规律）。举两个`antd`的例子。
+
++ **例子一**：
+
+<Img :src="$withBase('/npm.png')" alt="npm" />
+
+此时，`package.json`中写了：(此时会收到先行版本号的截断)
+
+```json
+"antd": "^0.1.0-beta2" // 理论上应该安装到0.x.x的最新版本，但是最终会安装到`0.1.0-pre`
+
+"antd": "^0.7.0" // 理论上应该安装到0.x.x的最新版本，最终会安装到`0.7.2`
+```
+
++ **例子二**：
+
+<Img :src="$withBase('/npm2.png')" alt="npm2" />
+
+此时，`package.json`中写了：(`2.0.0`到`2.13.4`中间也有一些`beta`版本)。
+
+```json
+"antd": "^2.0.0" // 最终会安装到`0.1.0-pre`
+
+"antd": "^0.7.0" // 最终会安装到`0.7.2`
+```
+
 ## npm包依赖管理
 
 有了semver版本之后，大家如果都根据这样的规范来做事，那一般都不会出什么大问题。`npm install`的输入是`package.json`，它的输出是一棵`node_modules`树。理想情况下，`npm install`应该像纯函数一样工作，对于同一个`package.json`总是生成完全相同的`node_modules`树。在某些情况下，就算是有一些小版本例如`~`或者`^`符号带来的版本微调，但是因为大版本不变，所以从语义上来说我们的核心功能也不会受到影响。
@@ -84,7 +110,10 @@
 
 ### 依赖变更
 
-+ 升级依赖: 修改`package.json`文件的依赖版本，执行`npm install`。
++ 升级依赖: 
+  + 修改`package.json`文件的依赖版本，执行`npm install`。此时会根据`semver`版本更新到对应的最新版本。
+  + 如果固定只升级某个版本，要`npm install package@version`。可以根据情况选择。
+
 + 降级依赖: 直接执行 `npm install package@version`(改动`package.json`不会对依赖进行降级)。注意改动依赖后提交lock文件。
 
 ## 其它的一些问题待补充

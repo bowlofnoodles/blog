@@ -103,6 +103,12 @@ module.exports = {
             '/frontend/浏览器相关/浏览器的架构演变', // TODO 待补
           ]
         },
+        {
+          title: '前端工程化',
+          children: [
+            '/frontend/前端工程化/npm包版本管理', // TODO 待补
+          ]
+        },
       ],
     }
   }

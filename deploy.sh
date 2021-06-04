@@ -7,7 +7,7 @@ set -e
 rm -rf ./docs/.vuepress/dist/
 
 # 生成静态文件
-npm run docs:build
+npm run build
 
 cd docs/.vuepress/dist
 

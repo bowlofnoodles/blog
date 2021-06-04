@@ -40,6 +40,8 @@ module.exports = {
             '/algorithm/每日一题/21-05-29', // TODO 待补
             '/algorithm/每日一题/21-05-30',
             '/algorithm/每日一题/21-05-31',
+            '/algorithm/每日一题/21-06-03',
+            '/algorithm/每日一题/21-06-04',
           ]
         },
         {

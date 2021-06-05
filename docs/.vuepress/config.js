@@ -42,6 +42,7 @@ module.exports = {
             '/algorithm/每日一题/21-05-31',
             '/algorithm/每日一题/21-06-03',
             '/algorithm/每日一题/21-06-04',
+            '/algorithm/每日一题/21-06-05',
           ]
         },
         {
@@ -49,6 +50,7 @@ module.exports = {
           children: [
             '/algorithm/算法记录/二叉树的遍历',
             '/algorithm/算法记录/排序算法', // TODO 待补
+            '/algorithm/算法记录/二分查找',
           ]
         }
       ],

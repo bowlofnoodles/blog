@@ -4,12 +4,8 @@ module.exports = {
   title: 'bowlofnoodles',
   description: 'bowlofnoodles的博客散记',
   base: '/blog/',
-  head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }]
-  ],
-  plugins: [
-    '@vuepress/back-to-top'
-  ],
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+  plugins: ['@vuepress/back-to-top'],
   themeConfig: {
     sidebarDepth: 2,
     lastUpdated: 'Last Updated',
@@ -18,7 +14,7 @@ module.exports = {
       { text: '网络', link: '/network/' },
       { text: '算法', link: '/algorithm/' },
       { text: '前端', link: '/frontend/' },
-      { text: 'github', link: 'https://github.com/bowlofnoodles' },
+      { text: 'github', link: 'https://github.com/bowlofnoodles' }
     ],
     sidebar: {
       '/algorithm/': [
@@ -43,6 +39,7 @@ module.exports = {
             '/algorithm/每日一题/21-06-03',
             '/algorithm/每日一题/21-06-04',
             '/algorithm/每日一题/21-06-05',
+            '/algorithm/每日一题/21-06-06' // TODO 待补
           ]
         },
         {
@@ -51,6 +48,7 @@ module.exports = {
             '/algorithm/算法记录/二叉树的遍历',
             '/algorithm/算法记录/排序算法', // TODO 待补
             '/algorithm/算法记录/二分查找',
+            '/algorithm/算法记录/堆' // TODO 待补
           ]
         }
       ],
@@ -62,7 +60,7 @@ module.exports = {
             '/javascript/数据类型', // TODO 待补
             '/javascript/js的数字存储', // TODO 待补
             '/javascript/隐式类型转换',
-            '/javascript/声明关键字',
+            '/javascript/声明关键字'
             // '/javascript/执行上下文和作用域',
             // '/javascript/this指向',
             // '/javascript/垃圾回收和内存泄漏',
@@ -86,7 +84,7 @@ module.exports = {
             '/javascript/手写系列/深浅拷贝', // TODO 待补
             '/javascript/手写系列/instanceof',
             '/javascript/手写系列/数组打乱',
-            '/javascript/手写系列/节流防抖',
+            '/javascript/手写系列/节流防抖'
             // '/javascript/手写系列/EventEmitter发布订阅',
             // '/javascript/手写系列/new运算符',
             // '/javascript/手写系列/继承',
@@ -104,16 +102,16 @@ module.exports = {
         {
           title: '浏览器相关',
           children: [
-            '/frontend/浏览器相关/浏览器的架构演变', // TODO 待补
+            '/frontend/浏览器相关/浏览器的架构演变' // TODO 待补
           ]
         },
         {
           title: '前端工程化',
           children: [
-            '/frontend/前端工程化/npm包版本管理', // TODO 待补
+            '/frontend/前端工程化/npm包版本管理' // TODO 待补
           ]
-        },
-      ],
+        }
+      ]
     }
   }
 };

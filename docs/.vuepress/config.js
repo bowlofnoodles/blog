@@ -39,7 +39,8 @@ module.exports = {
             '/algorithm/每日一题/21-06-03',
             '/algorithm/每日一题/21-06-04',
             '/algorithm/每日一题/21-06-05',
-            '/algorithm/每日一题/21-06-06' // TODO 待补
+            '/algorithm/每日一题/21-06-06', // TODO 待补
+            '/algorithm/每日一题/21-06-07',
           ]
         },
         {
@@ -84,7 +85,8 @@ module.exports = {
             '/javascript/手写系列/深浅拷贝', // TODO 待补
             '/javascript/手写系列/instanceof',
             '/javascript/手写系列/数组打乱',
-            '/javascript/手写系列/节流防抖'
+            '/javascript/手写系列/节流防抖',
+            '/javascript/手写系列/手写promise'
             // '/javascript/手写系列/EventEmitter发布订阅',
             // '/javascript/手写系列/new运算符',
             // '/javascript/手写系列/继承',

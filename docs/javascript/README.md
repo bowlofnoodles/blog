@@ -30,6 +30,7 @@
 - [instanceof](./手写系列/instanceof.md)
 - [数组打乱](./手写系列/数组打乱.md)
 - [节流防抖](./手写系列/节流防抖.md)
+- [Promise](./手写系列/手写promise.md)
 
 
 <!-- - [EventEmitter发布订阅](./手写系列/EventEmitter发布订阅.md) -->

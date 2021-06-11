@@ -7,6 +7,7 @@
 > 注释中加了一些对于规范的体现说明
 
 ``` javascript
+
 // promise三个状态
 const PENDING = 'pending';
 const FULFILLED = 'fulfilled';
@@ -22,12 +23,12 @@ function MyPromise(executor) {
 
   function resolve(value) {
     // then的回调是微任务
-    queueMicrotask(() => {
+    queueMicrotask(function() {
       // 当为PENDING时才做处理，如果已经resolved或者rejected则不回退 2.1
       if (ctx.status === PENDING) {
         ctx.status = FULFILLED;
         ctx.value = value;
-        for (let i = 0; i < ctx.onResolvedCallback.length; i ++) {
+        for (let i = 0; i < ctx.onResolvedCallback.length; i++) {
           ctx.onResolvedCallback[i](ctx.value);
         }
       }
@@ -36,7 +37,7 @@ function MyPromise(executor) {
 
   function reject(reason) {
     // then的回调是微任务
-    queueMicrotask(() => {
+    queueMicrotask(function() {
       // 当为PENDING时才做处理，如果已经resolved或者rejected则不回退 2.1
       if (ctx.status === PENDING) {
         ctx.status = REJECTED;
@@ -51,9 +52,9 @@ function MyPromise(executor) {
   try {
     executor(resolve, reject);
   } catch (err) {
-    reject(err);
+    return reject(err);
   }
-};
+}
 
 function resolvePromise(promise, x, resolve, reject) {
   // 循环引用 2.3.1
@@ -61,13 +62,14 @@ function resolvePromise(promise, x, resolve, reject) {
   // 2.3.2 如果x为一个promise，则返回的promise与x保持状态同步
   if (x instanceof MyPromise) {
     if (x.status === PENDING) {
-      x.then(v => resolvePromise(promise, v, resolve, reject), reject);
+      return x.then(function(v) {
+        return resolvePromise(promise, v, resolve, reject);
+      }, reject);
     } else {
-      x.then(resolve, reject);
+      return x.then(resolve, reject);
     }
-    return;
   }
-  // 用于判定是否调用过 
+  // 用于判定是否调用过
   let thenOrThrowCalled = false;
   // 2.3.3 是对象或者函数
   if ((x !== null && typeof x === 'object') || typeof x === 'function') {
@@ -91,26 +93,26 @@ function resolvePromise(promise, x, resolve, reject) {
             thenOrThrowCalled = true;
             return reject(e);
           }
-        )
+        );
       } else {
         // 2.3.3.4 then不是一个函数，直接resolve(x)
-        resolve(x);
+        return resolve(x);
       }
-    // 2.3.3.2
+      // 2.3.3.2
     } catch (err) {
       // 2.3.3.3.4.1
       if (thenOrThrowCalled) return;
       thenOrThrowCalled = true;
       // 2.3.3.3.4.2
-      reject(err);
+      return reject(err);
     }
   } else {
     // 2.3.4 不是对象也不是函数，直接resolve(x)
-    resolve(x);
+    return resolve(x);
   }
 }
 
-MyPromise.prototype.then = function(onFulfilled, onRejected) {
+MyPromise.prototype.then = function (onFulfilled, onRejected) {
   const ctx = this;
   // 可选参数
   onFulfilled = typeof onFulfilled === 'function' ? onFulfilled : value => value;
@@ -119,23 +121,23 @@ MyPromise.prototype.then = function(onFulfilled, onRejected) {
 
   if (ctx.status === PENDING) {
     // 链式调用 返回新的promise
-    let promise2 = new MyPromise((resolve, reject) => {
+    let promise2 = new MyPromise(function(resolve, reject) {
       // callback是一个数组 2.2.6/2.2.6.1
-      ctx.onResolvedCallback.push(value => {
+      ctx.onResolvedCallback.push(function(value) {
         try {
           let x = onFulfilled(value);
-          resolvePromise(promise2, x, resolve, reject); 
+          return resolvePromise(promise2, x, resolve, reject);
         } catch (err) {
-          reject(err);
+          return reject(err);
         }
       });
       // callback是一个数组 2.2.6/2.2.6.2
-      ctx.onRejectedCallback.push(reason => {
+      ctx.onRejectedCallback.push(function(reason) {
         try {
           let x = onRejected(reason);
-          resolvePromise(promise2, x, resolve, reject);
+          return resolvePromise(promise2, x, resolve, reject);
         } catch (err) {
-          reject(err);
+          return reject(err);
         }
       });
     });
@@ -144,28 +146,28 @@ MyPromise.prototype.then = function(onFulfilled, onRejected) {
 
   if (ctx.status === FULFILLED) {
     // 链式调用 返回新的promise 2.2.7
-    let promise2 = new MyPromise((resolve, reject) => {
-      queueMicrotask(() => {
+    let promise2 = new MyPromise(function(resolve, reject) {
+      queueMicrotask(function() {
         try {
           let x = onFulfilled(ctx.value);
-          resolvePromise(promise2, x, resolve, reject);
+          return resolvePromise(promise2, x, resolve, reject);
         } catch (err) {
-          reject(err);
+          return reject(err);
         }
-      })
+      });
     });
     return promise2;
   }
 
   if (ctx.status === REJECTED) {
     // 链式调用 返回新的promise 2.2.7
-    let promise2 = new MyPromise((resolve, reject) => {
-      queueMicrotask(() => {
+    let promise2 = new MyPromise(function(resolve, reject) {
+      queueMicrotask(function() {
         try {
           let x = onRejected(ctx.reason);
-          resolvePromise(promise2, x, resolve, reject);
+          return resolvePromise(promise2, x, resolve, reject);
         } catch (err) {
-          reject(err);
+          return reject(err);
         }
       });
     });
@@ -183,5 +185,6 @@ MyPromise.prototype.then = function(onFulfilled, onRejected) {
 //   });
 //   return dfd;
 // };
+
 
 ```

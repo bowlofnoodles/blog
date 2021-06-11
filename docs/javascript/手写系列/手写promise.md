@@ -2,6 +2,7 @@
 
 要了解一个 `promise` 怎么实现，我们首先要知道 `promise` 的实现规范，`es6 promise` 的实现规范遵循[Promise/A+规范](https://promisesaplus.com/)
 
+> 自己写了个promise-polyfill，发了个npm包，[es-promise-polyfill](https://github.com/bowlofnoodles/es6-promise-polyfill)
 ## 手动实现Promise
 
 > 注释中加了一些对于规范的体现说明

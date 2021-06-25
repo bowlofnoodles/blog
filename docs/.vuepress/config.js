@@ -3,7 +3,7 @@
 module.exports = {
   title: 'bowlofnoodles',
   description: 'bowlofnoodles的博客散记',
-  base: '/blog/',
+  base: '/',
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   plugins: ['@vuepress/back-to-top'],
   themeConfig: {

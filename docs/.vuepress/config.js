@@ -43,6 +43,7 @@ module.exports = {
             '/algorithm/题目记录/21-06-07',
             '/algorithm/题目记录/21-06-08',
             '/algorithm/题目记录/21-06-13',
+            '/algorithm/题目记录/21-07-08',
           ]
         },
         {

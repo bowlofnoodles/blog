@@ -20,29 +20,29 @@ module.exports = {
       '/algorithm/': [
         ['/algorithm/', 'Overview'],
         {
-          title: '每日一题',
+          title: '题目记录',
           children: [
-            '/algorithm/每日一题/21-05-20',
-            '/algorithm/每日一题/21-05-21', // TODO 待补
-            '/algorithm/每日一题/21-05-21-2',
-            '/algorithm/每日一题/21-05-22',
-            '/algorithm/每日一题/21-05-23',
-            '/algorithm/每日一题/21-05-24',
-            '/algorithm/每日一题/21-05-25',
-            '/algorithm/每日一题/21-05-26',
-            '/algorithm/每日一题/21-05-26-2',
-            '/algorithm/每日一题/21-05-27',
-            '/algorithm/每日一题/21-05-28',
-            '/algorithm/每日一题/21-05-29', // TODO 待补
-            '/algorithm/每日一题/21-05-30',
-            '/algorithm/每日一题/21-05-31',
-            '/algorithm/每日一题/21-06-03',
-            '/algorithm/每日一题/21-06-04',
-            '/algorithm/每日一题/21-06-05',
-            '/algorithm/每日一题/21-06-06', // TODO 待补
-            '/algorithm/每日一题/21-06-07',
-            '/algorithm/每日一题/21-06-08',
-            '/algorithm/每日一题/21-06-13',
+            '/algorithm/题目记录/21-05-20',
+            '/algorithm/题目记录/21-05-21', // TODO 待补
+            '/algorithm/题目记录/21-05-21-2',
+            '/algorithm/题目记录/21-05-22',
+            '/algorithm/题目记录/21-05-23',
+            '/algorithm/题目记录/21-05-24',
+            '/algorithm/题目记录/21-05-25',
+            '/algorithm/题目记录/21-05-26',
+            '/algorithm/题目记录/21-05-26-2',
+            '/algorithm/题目记录/21-05-27',
+            '/algorithm/题目记录/21-05-28',
+            '/algorithm/题目记录/21-05-29', // TODO 待补
+            '/algorithm/题目记录/21-05-30',
+            '/algorithm/题目记录/21-05-31',
+            '/algorithm/题目记录/21-06-03',
+            '/algorithm/题目记录/21-06-04',
+            '/algorithm/题目记录/21-06-05',
+            '/algorithm/题目记录/21-06-06', // TODO 待补
+            '/algorithm/题目记录/21-06-07',
+            '/algorithm/题目记录/21-06-08',
+            '/algorithm/题目记录/21-06-13',
           ]
         },
         {

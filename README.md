@@ -1,2 +1,2 @@
 # Personal Page
-visit https://blog.bowlofnoodles.top
+visit https://www.bowlofnoodles.top

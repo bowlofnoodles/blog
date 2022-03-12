@@ -5,7 +5,7 @@ module.exports = {
   description: 'bowlofnoodles的博客散记',
   base: '/',
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
-  plugins: ['@vuepress/back-to-top'],
+  plugins: ['@vuepress/back-to-top', ['vuepress-plugin-code-copy', {align: 'top'}]],
   themeConfig: {
     sidebarDepth: 2,
     lastUpdated: 'Last Updated',

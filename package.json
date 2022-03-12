@@ -20,12 +20,13 @@
   "bugs": {
     "url": "https://github.com/bowlofnoodles/blog/issues"
   },
-  "homepage": "https://blog.bowlofnoodles.top",
+  "homepage": "https://www.bowlofnoodles.top",
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.8.2",
     "vuepress": "^1.5.4"
   },
   "dependencies": {
-    "v-viewer": "^1.5.1"
+    "v-viewer": "^1.5.1",
+    "vuepress-plugin-code-copy": "^1.0.6"
   }
 }
